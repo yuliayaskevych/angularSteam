@@ -1,0 +1,12 @@
+<div class="signIn">
+    <h3>Sign In</h3>
+    <form [formGroup]="loginForm" (submit)="submit()">
+        <p>Email</p>
+        <input type="text" placeholder="email" formControlName="email">
+        <p>Password</p>
+        <input type="password" placeholder="password" formControlName="password">
+        <button type="submit" [disabled]="!loginForm.valid">Sign In</button>
+    </form>
+</div>
+<p>user_1@mail.ua</p>
+<p>user_1</p>
